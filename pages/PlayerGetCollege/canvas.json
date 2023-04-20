@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "PlayersPut",
-    "slug": "playersput",
+    "name": "PlayerGetCollege",
+    "slug": "playergetcollege",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 490,
+          "bottomRow": 510,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "none",
-              "widgetName": "PlayerID",
+              "widgetName": "CollegeIDInput",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "searchTags": [
@@ -36,8 +36,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 2,
-              "bottomRow": 9,
+              "topRow": 8,
+              "bottomRow": 15,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -47,7 +47,7 @@
               "parentColumnSpace": 14.0625,
               "dynamicTriggerPathList": [],
               "resetOnSubmit": true,
-              "leftColumn": 3,
+              "leftColumn": 11,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -64,14 +64,14 @@
               "labelTextSize": "0.875rem",
               "isRequired": false,
               "isDeprecated": false,
-              "rightColumn": 23,
+              "rightColumn": 31,
               "dynamicHeight": "FIXED",
-              "widgetId": "f4ibvu9o03",
+              "widgetId": "eouvo028e6",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "showStepArrows": false,
               "minWidth": 450,
               "isVisible": true,
-              "label": "Player ID to Delete",
+              "label": "Enter College ID",
               "version": 2,
               "parentId": "0",
               "labelAlignment": "left",
@@ -81,41 +81,73 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "",
+              "defaultText": "1",
               "minDynamicHeight": 4
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button1",
+              "onClick": "{{get_colleges.run(() => get_colleges.run(), () => {})}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 16,
+              "bottomRow": 20,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 13,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Submit",
+              "isDisabled": false,
+              "key": "b286ch1l1t",
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "isDefaultClickDisabled": true,
+              "widgetId": "grzoz6zp9n",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "hug",
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 21,
+              "topRow": 23,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
               "dynamicBindingPathList": [
-                {
-                  "key": "primaryColumns.step.computedValue"
-                },
-                {
-                  "key": "primaryColumns.task.computedValue"
-                },
-                {
-                  "key": "primaryColumns.status.computedValue"
-                },
-                {
-                  "key": "primaryColumns.action.computedValue"
-                },
-                {
-                  "key": "primaryColumns.action.buttonColor"
-                },
-                {
-                  "key": "primaryColumns.action.borderRadius"
-                },
-                {
-                  "key": "primaryColumns.action.boxShadow"
-                },
                 {
                   "key": "accentColor"
                 },
@@ -124,10 +156,37 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.col_name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.conference.computedValue"
+                },
+                {
+                  "key": "primaryColumns.division.computedValue"
+                },
+                {
+                  "key": "primaryColumns.acceptance_rate.computedValue"
+                },
+                {
+                  "key": "primaryColumns.average_gpa.computedValue"
+                },
+                {
+                  "key": "primaryColumns.average_sat.computedValue"
+                },
+                {
+                  "key": "primaryColumns.enrollment.computedValue"
+                },
+                {
+                  "key": "primaryColumns.state.computedValue"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 0,
+              "leftColumn": 3,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -161,35 +220,29 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681917688946,
+              "columnUpdatedAt": 1682018461399,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "PlayersTable",
+              "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "status",
-                "step",
-                "task",
-                "action",
-                "customColumn1",
-                "customColumn2",
-                "customColumn3",
-                "customColumn4",
-                "customColumn5",
-                "customColumn6"
+                "col_name",
+                "conference",
+                "division",
+                "acceptance_rate",
+                "average_gpa",
+                "average_sat",
+                "enrollment",
+                "state"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 49,
+              "bottomRow": 51,
               "columnWidthMap": {
-                "task": 102,
+                "task": 245,
                 "step": 70,
-                "status": 85,
-                "action": 79,
-                "customColumn1": 65,
-                "customColumn3": 67,
-                "customColumn4": 69
+                "status": 85
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -197,110 +250,106 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "step": {
+                "col_name": {
+                  "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "id": "step",
-                  "originalId": "step",
-                  "alias": "step",
+                  "originalId": "col_name",
+                  "id": "col_name",
+                  "alias": "col_name",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
+                  "isDisabled": false,
                   "isCellEditable": false,
-                  "isDerived": false,
-                  "label": "First Name",
-                  "computedValue": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                  "validation": {},
-                  "sticky": "",
-                  "labelColor": "#FFFFFF"
-                },
-                "task": {
-                  "index": 1,
-                  "width": 150,
-                  "id": "task",
-                  "originalId": "task",
-                  "alias": "task",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
+                  "isEditable": false,
                   "isCellVisible": true,
-                  "isCellEditable": false,
                   "isDerived": false,
-                  "label": "Last Name",
-                  "computedValue": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                  "validation": {},
+                  "label": "College Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"col_name\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF"
+                  "validation": {},
+                  "cellBackground": ""
                 },
-                "status": {
+                "conference": {
+                  "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "id": "status",
-                  "originalId": "status",
-                  "alias": "status",
+                  "originalId": "conference",
+                  "id": "conference",
+                  "alias": "conference",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
+                  "isDisabled": false,
                   "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Player ID",
-                  "computedValue": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                  "validation": {},
+                  "label": "Conference",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"conference\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF"
+                  "validation": {},
+                  "cellBackground": ""
                 },
-                "action": {
+                "division": {
+                  "allowCellWrapping": false,
                   "index": 3,
                   "width": 150,
-                  "id": "action",
-                  "originalId": "action",
-                  "alias": "action",
+                  "originalId": "division",
+                  "id": "division",
+                  "alias": "division",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "button",
+                  "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
-                  "isCellEditable": false,
                   "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Grade",
-                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                  "computedValue": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                  "validation": {},
+                  "label": "Division",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"division\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF",
-                  "buttonColor": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{PlayersTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                  "validation": {},
+                  "cellBackground": ""
                 },
-                "customColumn1": {
+                "acceptance_rate": {
                   "allowCellWrapping": false,
-                  "index": 4,
+                  "index": 0,
                   "width": 150,
-                  "originalId": "customColumn1",
-                  "id": "customColumn1",
-                  "alias": "Age",
+                  "originalId": "acceptance_rate",
+                  "id": "acceptance_rate",
+                  "alias": "acceptance_rate",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -308,27 +357,28 @@
                   "isCellEditable": false,
                   "isEditable": false,
                   "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "Age",
+                  "isDerived": false,
+                  "label": "Acceptance Rate",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"acceptance_rate\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
+                  "cellBackground": ""
                 },
-                "customColumn2": {
+                "average_gpa": {
                   "allowCellWrapping": false,
-                  "index": 5,
+                  "index": 1,
                   "width": 150,
-                  "originalId": "customColumn2",
-                  "id": "customColumn2",
-                  "alias": "High School ID",
+                  "originalId": "average_gpa",
+                  "id": "average_gpa",
+                  "alias": "average_gpa",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -336,27 +386,57 @@
                   "isCellEditable": false,
                   "isEditable": false,
                   "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "High School ID",
+                  "isDerived": false,
+                  "label": "Average GPA",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"average_gpa\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
+                  "cellBackground": ""
                 },
-                "customColumn3": {
+                "average_sat": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "average_sat",
+                  "id": "average_sat",
+                  "alias": "average_sat",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Average SAT",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"average_sat\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "enrollment": {
                   "allowCellWrapping": false,
                   "index": 6,
                   "width": 150,
-                  "originalId": "customColumn3",
-                  "id": "customColumn3",
-                  "alias": "SAT",
+                  "originalId": "enrollment",
+                  "id": "enrollment",
+                  "alias": "enrollment",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -364,27 +444,28 @@
                   "isCellEditable": false,
                   "isEditable": false,
                   "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "SAT",
+                  "isDerived": false,
+                  "label": "Enrollment",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"enrollment\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
+                  "cellBackground": ""
                 },
-                "customColumn4": {
+                "state": {
                   "allowCellWrapping": false,
                   "index": 7,
                   "width": 150,
-                  "originalId": "customColumn4",
-                  "id": "customColumn4",
-                  "alias": "ACT",
+                  "originalId": "state",
+                  "id": "state",
+                  "alias": "state",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -392,81 +473,24 @@
                   "isCellEditable": false,
                   "isEditable": false,
                   "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "ACT",
+                  "isDerived": false,
+                  "label": "State",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"state\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
-                },
-                "customColumn5": {
-                  "allowCellWrapping": false,
-                  "index": 8,
-                  "width": 150,
-                  "originalId": "customColumn5",
-                  "id": "customColumn5",
-                  "alias": "GPA",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "GPA",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "",
-                  "sticky": "",
-                  "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
-                },
-                "customColumn6": {
-                  "allowCellWrapping": false,
-                  "index": 9,
-                  "width": 150,
-                  "originalId": "customColumn6",
-                  "id": "customColumn6",
-                  "alias": "Email",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "Email",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "",
-                  "sticky": "",
-                  "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF"
+                  "cellBackground": ""
                 }
               },
-              "key": "5xnt9eucen",
+              "key": "vs75qb13nr",
               "canFreezeColumn": true,
               "isDeprecated": false,
               "rightColumn": 64,
               "textSize": "0.875rem",
-              "widgetId": "x2mqs47e5j",
+              "widgetId": "xwlq51fezt",
               "minWidth": 450,
-              "tableData": "",
+              "tableData": "{{get_colleges.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -482,7 +506,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "PlayersPut",
+        "id": "PlayerGetCollege",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -493,5 +517,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "642aef541fb50d38a4affa56_644005eba9b28e08d5c23f2b"
+  "gitSyncId": "6440b332beca0b1ee49d1a38_644188c8beca0b1ee49d1aa0"
 }

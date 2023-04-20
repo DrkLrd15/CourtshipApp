@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_players",
+    "name": "get_roster",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/PlayerProfile"
+        "url": "web:4000/c/roster"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "PlayersPost",
+    "pageId": "DeleteRoster",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "PlayersPost_get_players",
+  "id": "DeleteRoster_get_roster",
   "deleted": false,
-  "gitSyncId": "6440b332beca0b1ee49d1a38_64415759beca0b1ee49d1a66"
+  "gitSyncId": "6440b332beca0b1ee49d1a38_64419161beca0b1ee49d1aae"
 }

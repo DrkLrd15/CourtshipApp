@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "PlayersPost",
-    "slug": "playerspost",
+    "name": "PlayersUpdate",
+    "slug": "playersupdate",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1950,
+          "bottomRow": 1600,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -31,7 +31,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 78,
+              "topRow": 29,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -45,9 +45,6 @@
                 },
                 {
                   "key": "boxShadow"
-                },
-                {
-                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.act.computedValue"
@@ -78,10 +75,13 @@
                 },
                 {
                   "key": "primaryColumns.sat.computedValue"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 0,
+              "leftColumn": 1,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -115,7 +115,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1682006065336,
+              "columnUpdatedAt": 1682021600651,
               "originalBottomRow": 136,
               "defaultSelectedRowIndices": [
                 0
@@ -136,7 +136,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 106,
+              "bottomRow": 74,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -169,7 +169,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "act",
+                  "label": "ACT",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"act\"]))}}",
@@ -198,7 +198,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "age",
+                  "label": "Age",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"age\"]))}}",
@@ -227,7 +227,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "email",
+                  "label": "Email",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
@@ -256,7 +256,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "first_name",
+                  "label": "First Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
@@ -285,7 +285,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "gpa",
+                  "label": "GPA",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gpa\"]))}}",
@@ -314,7 +314,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "grade",
+                  "label": "Grade",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"grade\"]))}}",
@@ -343,7 +343,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "highschoolid",
+                  "label": "High School ID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"highschoolid\"]))}}",
@@ -372,7 +372,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "last_name",
+                  "label": "Last Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
@@ -401,7 +401,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "playerid",
+                  "label": "Player ID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"playerid\"]))}}",
@@ -430,7 +430,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "sat",
+                  "label": "SAT",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sat\"]))}}",
@@ -461,15 +461,15 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
-              "widgetName": "Form1",
+              "widgetName": "PlayerPutForm",
               "isCanvas": true,
               "displayName": "Form",
               "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
               "searchTags": [
                 "group"
               ],
-              "topRow": 118,
-              "bottomRow": 195,
+              "topRow": 83,
+              "bottomRow": 160,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -477,7 +477,7 @@
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 3,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -555,8 +555,8 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1",
-                      "onClick": "{{player_post.run(() => get_players.run(), () => {})}}",
+                      "widgetName": "SubmitPlayerUpdate",
+                      "onClick": "{{player_put.run(() => get_players.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -574,7 +574,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 62,
+                      "leftColumn": 39,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -587,7 +587,7 @@
                       "isDisabled": false,
                       "key": "b286ch1l1t",
                       "isDeprecated": false,
-                      "rightColumn": 64,
+                      "rightColumn": 59,
                       "isDefaultClickDisabled": true,
                       "widgetId": "27sxou7ue8",
                       "minWidth": 120,
@@ -605,7 +605,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1",
+                      "widgetName": "highschoolid",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -667,7 +667,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input2",
+                      "widgetName": "first_name",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -676,8 +676,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 17,
+                      "topRow": 10,
+                      "bottomRow": 16,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -687,7 +687,7 @@
                       "parentColumnSpace": 4.9609375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -707,7 +707,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 31,
+                      "rightColumn": 32,
                       "dynamicHeight": "FIXED",
                       "widgetId": "0fd03grk5e",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -729,7 +729,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input3",
+                      "widgetName": "last_name",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -749,7 +749,7 @@
                       "parentColumnSpace": 5.400390625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -769,7 +769,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 33,
                       "dynamicHeight": "FIXED",
                       "widgetId": "nxly52ut3i",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -791,7 +791,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input4",
+                      "widgetName": "age",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -811,7 +811,7 @@
                       "parentColumnSpace": 5.400390625,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -831,7 +831,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 33,
                       "dynamicHeight": "FIXED",
                       "widgetId": "cexkbta5ej",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -853,7 +853,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input5",
+                      "widgetName": "grade",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -893,7 +893,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 31,
+                      "rightColumn": 29,
                       "dynamicHeight": "FIXED",
                       "widgetId": "emji02wwlb",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -915,7 +915,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input6",
+                      "widgetName": "playerid",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -935,7 +935,7 @@
                       "parentColumnSpace": 5.83984375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -955,7 +955,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 32,
+                      "rightColumn": 33,
                       "dynamicHeight": "FIXED",
                       "widgetId": "24w3prmz0t",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -977,7 +977,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input7",
+                      "widgetName": "sat",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -997,7 +997,7 @@
                       "parentColumnSpace": 5.83984375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 0,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1017,7 +1017,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 31,
+                      "rightColumn": 32,
                       "dynamicHeight": "FIXED",
                       "widgetId": "wf4qds7mv7",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1039,7 +1039,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input8",
+                      "widgetName": "act",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1101,7 +1101,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input9",
+                      "widgetName": "email",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1163,7 +1163,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input10",
+                      "widgetName": "gpa",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1245,7 +1245,7 @@
               "key": "ns9srmdtk4",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 31,
+              "rightColumn": 35,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "u7u58k3s2o",
               "minWidth": 450,
@@ -1254,10 +1254,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 118,
+              "originalTopRow": 83,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 195,
+              "originalBottomRow": 160,
               "minDynamicHeight": 10
             }
           ]
@@ -1265,7 +1265,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "PlayersPost_get_players",
+              "id": "PlayersUpdate_get_players",
               "name": "get_players",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -1276,7 +1276,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "PlayersPost",
+        "id": "PlayersUpdate",
         "deleted": false,
         "policies": [],
         "userPermissions": []

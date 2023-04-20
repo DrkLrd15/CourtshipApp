@@ -1,23 +1,19 @@
 {
   "pages": [
     {
-      "id": "PlayersPost",
+      "id": "PlayersUpdate",
       "isDefault": true
     },
     {
-      "id": "PlayersPut",
-      "isDefault": false
-    },
-    {
-      "id": "CoachGetPlayer",
-      "isDefault": false
-    },
-    {
-      "id": "PlayerGetColleges",
-      "isDefault": false
-    },
-    {
       "id": "CoachScout",
+      "isDefault": false
+    },
+    {
+      "id": "PlayerGetCollege",
+      "isDefault": false
+    },
+    {
+      "id": "DeleteRoster",
       "isDefault": false
     }
   ],
