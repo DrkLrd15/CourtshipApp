@@ -5,10 +5,6 @@
       "isDefault": true
     },
     {
-      "id": "PlayersDelete",
-      "isDefault": false
-    },
-    {
       "id": "PlayersPut",
       "isDefault": false
     },
@@ -17,11 +13,11 @@
       "isDefault": false
     },
     {
-      "id": "CoachPut",
+      "id": "PlayerGetColleges",
       "isDefault": false
     },
     {
-      "id": "PlayerGetColleges",
+      "id": "CoachScout",
       "isDefault": false
     }
   ],

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 540,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -97,7 +97,7 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "Colleges",
               "defaultPageSize": 0,
               "columnOrder": [
                 "col_name",
@@ -106,11 +106,13 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 34,
+              "bottomRow": 54,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
-                "status": 85
+                "status": 85,
+                "conference": 324,
+                "col_name": 251
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -142,7 +144,7 @@
                   "label": "col_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"col_name\"]))}}",
+                  "computedValue": "{{Colleges.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"col_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -171,7 +173,7 @@
                   "label": "conference",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"conference\"]))}}",
+                  "computedValue": "{{Colleges.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"conference\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -200,7 +202,7 @@
                   "label": "division",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"division\"]))}}",
+                  "computedValue": "{{Colleges.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"division\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -209,7 +211,7 @@
               "key": "vs75qb13nr",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 42,
+              "rightColumn": 55,
               "textSize": "0.875rem",
               "widgetId": "j35516x6th",
               "minWidth": 450,
