@@ -65,6 +65,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
@@ -409,7 +412,7 @@
               "textSize": "0.875rem",
               "widgetId": "jmolxf7bwf",
               "minWidth": 450,
-              "tableData": "",
+              "tableData": "{{CoachGet.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -491,8 +494,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 10,
-              "bottomRow": 14,
+              "topRow": 13,
+              "bottomRow": 17,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -503,7 +506,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 26,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -516,7 +519,7 @@
               "isDisabled": false,
               "key": "b286ch1l1t",
               "isDeprecated": false,
-              "rightColumn": 42,
+              "rightColumn": 19,
               "isDefaultClickDisabled": true,
               "widgetId": "5q3mdy1qra",
               "minWidth": 120,
@@ -534,7 +537,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "CoachGetPlayer_CoachGet",
+              "name": "CoachGet",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "{Input1.text}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "CoachGetPlayer",
