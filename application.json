@@ -19,6 +19,10 @@
     {
       "id": "CoachPut",
       "isDefault": false
+    },
+    {
+      "id": "PlayerGetColleges",
+      "isDefault": false
     }
   ],
   "viewMode": false,

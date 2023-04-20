@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Api1",
+    "name": "CoachGet",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/p/playerProfile"
+        "url": "web:4000/c/PlayerProfile/1"
       },
       "invalids": [],
       "messages": [],
@@ -31,7 +31,7 @@
       "queryParameters": [],
       "body": "",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "GET",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -53,7 +53,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "CoachGetPlayer_Api1",
+  "id": "CoachGetPlayer_CoachGet",
   "deleted": false,
   "gitSyncId": "642aef541fb50d38a4affa56_64400bb3a9b28e08d5c23f3b"
 }
