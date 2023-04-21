@@ -10,6 +10,10 @@ Our appsmith app features four pages that allows:
 - A GET method for Players to search a college's statistics
 - A DELETE method to delete certain colleges from a roster
 
+## Developers
+
+The AppSmith was developed by Derek Joyce and Stephanie Yee. To limit the number of times it needed to be uploaded to Git and for ease of coordination, we worked together on the same laptop and uploaded all at once at the end.
+
 ##### You can visit the application using the below link
 
 ###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](http://localhost:8080/applications/6440ab31beca0b1ee49d1a18/pages/6440ab31beca0b1ee49d1a1f) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](http://localhost:8080/applications/6440ab31beca0b1ee49d1a18/pages/6440ab31beca0b1ee49d1a1f/edit)
